@@ -2,92 +2,114 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>Java后端开发工程师 | 技术主页</title>
+    <title>高级架构师 | 技术主页</title>
     <style>
         :root {
             --primary: #2c3e50;
             --secondary: #3498db;
             --accent: #e74c3c;
-            --light: #ecf0f1;
+            --light: #f8f9fa;
             --dark: #2c3e50;
-            --border: #ddd;
+            --border: #eee;
+            --card-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        * {
+            box-sizing: border-box;
         }
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            max-width: 1200px;
+            max-width: 1100px;
             margin: 0 auto;
             padding: 20px;
             color: var(--dark);
-            background-color: #f8f9fa;
+            background-color: var(--light);
         }
 
         .header {
             text-align: center;
-            padding: 40px 0;
+            padding: 60px 20px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: var(--card-shadow);
         }
 
-        h1, h2, h3 {
-            color: var(--primary);
-            margin-bottom: 15px;
+        .header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            opacity: 0.9;
         }
 
         .section {
-            margin-bottom: 40px;
-            padding: 25px;
+            margin-bottom: 50px;
+            padding: 30px 25px;
             background: white;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            box-shadow: var(--card-shadow);
+        }
+
+        .section h2 {
+            border-left: 4px solid var(--secondary);
+            padding-left: 10px;
+            margin-bottom: 25px;
         }
 
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
         }
 
         .skill-category {
-            background: var(--light);
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid var(--secondary);
+            background: #f0f4ff;
+            padding: 25px;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(52, 152, 219, 0.15);
         }
 
         .tech-tag {
             display: inline-block;
             background: #e8f0fe;
-            color: #2c3e50;
-            padding: 5px 12px;
+            color: var(--primary);
+            padding: 8px 16px;
             border-radius: 20px;
-            font-size: 0.9em;
-            margin: 5px;
-            font-weight: 500;
+            font-size: 0.95em;
+            margin: 6px 5px 6px 0;
             transition: all 0.3s ease;
         }
 
         .tech-tag:hover {
-            background: #3498db;
+            background: var(--secondary);
             color: white;
-            transform: translateY(-2px);
+            transform: scale(1.1);
         }
 
         .project-card {
             margin-bottom: 25px;
-            padding: 20px;
-            border-radius: 8px;
+            padding: 25px;
+            border-radius: 12px;
             border: 1px solid var(--border);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: all 0.3s ease;
         }
 
         .project-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
         }
 
         .project-header {
@@ -100,6 +122,7 @@
         .project-title {
             color: var(--secondary);
             margin: 0;
+            font-size: 1.2rem;
         }
 
         ul {
@@ -126,10 +149,11 @@
             display: inline-block;
             background: #24292e;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 24px;
             border-radius: 6px;
             margin-top: 10px;
             font-weight: 500;
+            transition: all 0.3s ease;
         }
 
         .github-link:hover {
@@ -140,10 +164,13 @@
         .divider {
             height: 1px;
             background: var(--border);
-            margin: 30px 0;
+            margin: 40px 0;
         }
 
         @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
             .skills-grid {
                 grid-template-columns: 1fr;
             }
@@ -238,20 +265,18 @@
 
 <!-- 代表性项目 -->
 <section class="section">
-    <h2>代表性项目</h2>
+    <h2>项目经历</h2>
     
     <!-- 数据治理平台 -->
     <div class="project-card">
         <div class="project-header">
-            <h3 class="project-title">数据治理与智能决策平台</h3>
+            <h3 class="project-title">指标数据决策平台</h3>
         </div>
-        <p>省级数据全量归集平台，信息资源共享率≥90%</p>
+        <p>指标数据全量归集平台，信息资源共享率≥90%</p>
         <ul>
             <li>基于SpringCloud拆分数据采集、分析引擎模块</li>
-            <li>引入大模型进行知识图谱构建，工单分类准确率92%</li>
-            <li>开发数据脱敏插件，通过等保三级认证</li>
+            <li>引入大模型进行知识图谱构建，提供指标分析辅助决策</li>
         </ul>
-        <a href="#" class="github-link">GitHub仓库</a>
     </div>
 
     <!-- 跨地域网络系统 -->
@@ -265,7 +290,6 @@
             <li>Redis+Kafka优化路由同步，时延从50s降至12s</li>
             <li>BGP+ECMP容灾方案，故障恢复时间<5s</li>
         </ul>
-        <a href="#" class="github-link">GitHub仓库</a>
     </div>
 
     <!-- 5G网元管理系统 -->
@@ -279,7 +303,6 @@
             <li>OpenStack资源调度，利用率从60%提升至85%</li>
             <li>ELK日志追踪方案定位效率提升40%</li>
         </ul>
-        <a href="#" class="github-link">GitHub仓库</a>
     </div>
 </section>
 
@@ -298,7 +321,7 @@
 <section class="section">
     <h2>联系方式</h2>
     <ul>
-        <li>LinkedIn: <a href="#">linkedin.com/in/yourname</a></li>
+        <li>microMsg: <a href="#">luzhaoci1108</a></li>
     </ul>
 </section>
 
