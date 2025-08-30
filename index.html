@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java后端开发工程师 | GitHub主页</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --border: #ddd;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: var(--dark);
+            background-color: #f8f9fa;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        h1, h2, h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            padding: 25px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .skill-category {
+            background: var(--light);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--secondary);
+        }
+        
+        .tech-tag {
+            display: inline-block;
+            background: #e8f0fe;
+            color: #2c3e50;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin: 5px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .tech-tag:hover {
+            background: #3498db;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .project-card {
+            margin-bottom: 25px;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .project-title {
+            color: var(--secondary);
+            margin: 0;
+        }
+        
+        .project-period {
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        ul {
+            padding-left: 20px;
+            margin: 15px 0;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+        
+        a {
+            color: var(--secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        a:hover {
+            color: var(--accent);
+            text-decoration: underline;
+        }
+        
+        .github-link {
+            display: inline-block;
+            background: #24292e;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            margin-top: 10px;
+            font-weight: 500;
+        }
+        
+        .github-link:hover {
+            background: #1a1e22;
+            transform: translateY(-2px);
+        }
+        
+        .divider {
+            height: 1px;
+            background: var(--border);
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 头部介绍 -->
+<div class="header">
+    <h1>李明</h1>
+    <p>Java后端开发工程师 | 分布式系统架构师</p>
+    <p>7年Java后端开发经验，专注分布式系统架构设计与高可用系统开发</p>
+</div>
+
+<!-- 核心技术栈 -->
+<section class="section">
+    <h2>核心技术栈</h2>
+    <div class="skills-grid">
+        <div class="skill-category">
+            <h3>开发框架</h3>
+            <div class="tech-tag">SpringCloud</div>
+            <div class="tech-tag">SpringBoot</div>
+            <div class="tech-tag">MyBatis</div>
+            <div class="tech-tag">Flask</div>
+            <div class="tech-tag">Rasa</div>
+        </div>
+        
+        <div class="skill-category">
+            <h3>云原生技术</h3>
+            <div class="tech-tag">Kubernetes</div>
+            <div class="tech-tag">Docker</div>
+            <div class="tech-tag">Helm</div>
+            <div class="tech-tag">OpenStack</div>
+            <div class="tech-tag">Istio</div>
+        </div>
+        
+        <div class="skill-category">
+            <h3>中间件</h3>
+            <div class="tech-tag">Redis</div>
+            <div class="tech-tag">Kafka</div>
+            <div class="tech-tag">RabbitMQ</div>
+            <div class="tech-tag">Nginx</div>
+            <div class="tech-tag">Seata</div>
+        </div>
+        
+        <div class="skill-category">
+            <h3>数据库</h3>
+            <div class="tech-tag">MySQL</div>
+            <div class="tech-tag">ShardingSphere</div>
+            <div class="tech-tag">Oracle</div>
+            <div class="tech-tag">Elasticsearch</div>
+            <div class="tech-tag">MongoDB</div>
+        </div>
+        
+        <div class="skill-category">
+            <h3>监控与运维</h3>
+            <div class="tech-tag">Prometheus</div>
+            <div class="tech-tag">Grafana</div>
+            <div class="tech-tag">ELK</div>
+            <div class="tech-tag">JMeter</div>
+            <div class="tech-tag">Zabbix</div>
+        </div>
+        
+        <div class="skill-category">
+            <h3>大数据与AI</h3>
+            <div class="tech-tag">Flink</div>
+            <div class="tech-tag">Apache Nifi</div>
+            <div class="tech-tag">LoRA</div>
+            <div class="tech-tag">NVIDIA Triton</div>
+            <div class="tech-tag">MaaS</div>
+        </div>
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- 架构设计能力 -->
+<section class="section">
+    <h2>架构设计能力</h2>
+    <div class="skills-grid">
+        <div class="skill-category">
+            <h3>微服务治理</h3>
+            <ul>
+                <li>基于SpringCloud构建微服务架构</li>
+                <li>服务注册与发现（Eureka/Zookeeper）</li>
+                <li>服务网关（SpringCloud Gateway）</li>
+                <li>分布式事务（Seata TCC模式）</li>
+                <li>配置中心（SpringCloud Config）</li>
+            </ul>
+        </div>
+        
+        <div class="skill-category">
+            <h3>高可用设计</h3>
+            <ul>
+                <li>多活DC容灾架构设计</li>
+                <li>BGP路由收敛与ECMP负载均衡</li>
+                <li>Zookeeper+Eureka双注册机制</li>
+                <li>Nginx动态负载均衡</li>
+                <li>主备DC自动切换（RTO<5s）</li>
+            </ul>
+        </div>
+        
+        <div class="skill-category">
+            <h3>混合云集成</h3>
+            <ul>
+                <li>OpenStack私有云与公有云资源调度</li>
+                <li>K8s多集群管理（200+节点）</li>
+                <li>跨地域控制器协同</li>
+                <li>资源动态调度与成本优化</li>
+                <li>统一监控告警平台</li>
+            </ul>
+        </div>
+        
+        <div class="skill-category">
+            <h3>AI融合架构</h3>
+            <ul>
+                <li>"微服务+大模型"混合架构</li>
+                <li>政务知识图谱构建</li>
+                <li>LoRA微调大模型（4000亿条数据）</li>
+                <li>异步消息队列解耦（RabbitMQ）</li>
+                <li>模型服务容器化（Docker+Triton）</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- 性能优化 -->
+<section class="section">
+    <h2>性能优化</h2>
+    <div class="skills-grid">
+        <div class="skill-category">
+            <h3>JVM调优</h3>
+            <ul>
+                <li>G1垃圾回收器配置优化</li>
+                <li>GC停顿时间从500ms降至200ms</li>
+                <li>内存泄漏排查（jmap/MAT）</li>
+                <li>jstack线程分析</li>
+                <li>系统吞吐量提升30%</li>
+            </ul>
+        </div>
+        
+        <div class="skill-category">
+            <h3>数据库优化</h3>
+            <ul>
+                <li>ShardingSphere分库分表（128分片）</li>
+                <li>索引优化与慢SQL分析</li>
+                <li>关键业务查询性能提升300%</li>
+                <li>MySQL主从复制</li>
+                <li>读写分离架构</li>
+            </ul>
+        </div>
+        
+        <div class="skill-category">
+            <h3>链路优化</h3>
+            <ul>
+                <li>全链路压测（JMeter+Prometheus）</li>
+                <li>瓶颈定位与响应时间优化50%</li>
+                <li>Kafka+Redis缓存链路改造</li>
+                <li>实时指标分析延迟从5s降至800ms</li>
+                <li>支持10万+并发请求</li>
+            </ul>
+        </div>
+        
+        <div class="skill-category">
+            <h3>系统监控</h3>
+            <ul>
+                <li>Prometheus+Grafana监控平台</li>
+                <li>200+ KPI指标实时采集</li>
+                <li>告警响应时间<1s</li>
+                <li>ELK全链路日志追踪</li>
+                <li>TB级日志存储与秒级检索</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- 项目实践 -->
+<section class="section">
+    <h2>项目实践</h2>
+    
+    <!-- 数字政府大脑系统 -->
+    <div class="project-card">
+        <div class="project-header">
+            <h3 class="project-title">数字政府大脑系统</h3>
+            <span class="project-period">2024.06-至今</span>
+        </div>
+        <p>政务数据全量归集平台，覆盖100%自治区级部门及14个设区市，信息资源共享率≥90%</p>
+        <ul>
+            <li>基于SpringCloud构建"微服务+大模型"混合架构</li>
+            <li>集成政务知识图谱，支持政策文件语义解析</li>
+            <li>LoRA微调政务大模型，12345热线工单分类准确率92%</li>
+            <li>Kafka+Redis缓存链路优化，实时分析延迟从5s降至800ms</li>
+            <li>K8s+Helm实现多租户动态扩缩容，支持10万+并发</li>
+            <li>开发政务数据脱敏插件，通过等保三级认证</li>
+        </ul>
+        <a href="#" class="github-link">GitHub仓库</a>
+    </div>
+
+    <!-- 腾讯云控制面 -->
+    <div class="project-card">
+        <div class="project-header">
+            <h3 class="project-title">腾讯云控制面系统</h3>
+            <span class="project-period">2022.02-2023.06</span>
+        </div>
+        <p>跨地域互联网络控制平面，实现多VPC/IDC实例自动绑定与路由智能调度</p>
+        <ul>
+            <li>Flask开发关联实例模块，日均处理10万+路由</li>
+            <li>Redis+Kafka优化路由同步，时延从50s降至12s</li>
+            <li>设计异常路由检测模块，解决路由漂移问题</li>
+            <li>开发自动化对账系统，80%差错自动修复</li>
+            <li>Redis分布式锁确保数据一致性</li>
+            <li>BGP+ECMP容灾方案，故障恢复时间<5s</li>
+        </ul>
+        <a href="#" class="github-link">GitHub仓库</a>
+    </div>
+
+    <!-- 5G网元管理系统 -->
+    <div class="project-card">
+        <div class="project-header">
+            <h3 class="project-title">5G网元管理系统</h3>
+            <span class="project-period">2017.07-2021.08</span>
+        </div>
+        <p>支撑全球200+地区部署的网元生命周期管理系统</p>
+        <ul>
+            <li>SpringCloud微服务架构，Seata TCC模式解决分布式事务</li>
+            <li>ShardingSphere分库分表，QPS提升3倍</li>
+            <li>GitLab CI/CD实现自动化构建与回滚</li>
+            <li>OpenStack资源调度，利用率从60%提升至85%</li>
+            <li>Prometheus+Grafana监控平台，告警响应<1s</li>
+            <li>K8s自动化部署工具，单地区部署耗时从4h降至20min</li>
+        </ul>
+        <a href="#" class="github-link">GitHub仓库</a>
+    </div>
+</section>
+
+<!-- 联系方式 -->
+<section class="section">
+    <h2>联系方式</h2>
+    <ul>
+        <li>Email: <a href="mailto:example@example.com">example@example.com</a></li>
+        <li>LinkedIn: <a href="#">linkedin.com/in/yourname</a></li>
+        <li>技术博客: <a href="#">yourblog.com</a></li>
+    </ul>
+</section>
+
+</body>
+</html>
